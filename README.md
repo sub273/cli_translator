@@ -59,3 +59,5 @@ cli_translator.py -h
 ## Releases
 
 - 20231009.1958: Initial Release
+- 20231009.2200: Fixed CVEs
+  - Updated urllib3 and cryptography versions from pypi
