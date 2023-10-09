@@ -1,0 +1,16 @@
+certifi==2023.7.22
+cffi==1.15.1
+charset-normalizer==3.2.0
+cryptography==41.0.3
+deepl==1.15.0
+idna==3.4
+importlib-metadata==6.8.0
+jaraco.classes==3.3.0
+jeepney==0.8.0
+keyring==24.2.0
+more-itertools==10.1.0
+pycparser==2.21
+requests==2.31.0
+SecretStorage==3.3.3
+urllib3==2.0.4
+zipp==3.16.2
