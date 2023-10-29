@@ -78,6 +78,8 @@ cli_translator.py -h
 
 ## Releases
 
+- 20231029.2029: Fixed CVEs
+  - Updated cffi, charset-normalizer, cryptography, urllib3 and zipp from pypi
 - 20231010.2345: Improved Readme
 - 20231009.2200: Fixed CVEs
   - Updated urllib3 and cryptography versions from pypi
