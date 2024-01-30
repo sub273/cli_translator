@@ -3,7 +3,7 @@
 
 # pylint: disable=logging-fstring-interpolation, import-error, broad-except
 
-__version__ = "20231214.2008"
+__version__ = "20240130.2019"
 
 # standard imports
 import argparse
