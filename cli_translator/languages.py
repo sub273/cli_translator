@@ -20,6 +20,7 @@ class LanguageType(StrEnum):
     TARGET = "target"
 
 
+arabic = Language("AR", "Arabic")
 bulgarian = Language("BG", "Bulgarian")
 czech = Language("CS", "Czech")
 danish = Language("DA", "Danish")
@@ -55,6 +56,7 @@ ukranian = Language("UK", "Ukrainian")
 chinese = Language("ZH", "Chinese")
 
 source_languages = {}
+source_languages[arabic.code] = arabic
 source_languages[bulgarian.code] = bulgarian
 source_languages[czech.code] = czech
 source_languages[danish.code] = danish
@@ -87,6 +89,7 @@ source_languages[chinese.code] = chinese
 
 
 target_languages = {}
+target_languages[arabic.code] = arabic
 target_languages[bulgarian.code] = bulgarian
 target_languages[czech.code] = czech
 target_languages[danish.code] = danish
