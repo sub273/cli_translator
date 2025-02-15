@@ -230,7 +230,8 @@ def translate(text_to_translate: str, config: Config) -> List[deepl.TextResult]:
             text=text_to_translate,
             target_lang=config.target_language.code,
             source_lang=config.source_language.code,
-            model_type="latency_optimized" # no quality_optimized for free users
+            formality=deepl.Formality.DEFAULT,
+            model_type=deepl.ModelType.LATENCY_OPTIMIZED # no quality_optimized for free users
         )
     except deepl.exceptions.AuthorizationException:
         exit_error("Authorization failure, best to check your authentication key.")
