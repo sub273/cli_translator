@@ -1,13 +1,33 @@
 # CLI Translator
 
+~~~
 Turn your current cli into a translator.
 
 - The key functionalty comes with: https://pypi.org/project/deepl/
-- You'll need a DeepL Authentication Key. It will be stored in your local systems keyring.
+- You'll need a DeepL Authentication Key. It will be stored in your systems keyring.
+- It just needs to be set once, using the -auth [Your-Key] argument.
+- You can delete it from your keyring again, using the -del_auth argument.
 
 You'll need to pass source and target language. You can use the arguments for it,
-but you'll be prompted for it if you don't. When you're prompted for it, you can get a list
-of the supported codes.
+but you'll be prompted for it if you don't.
+
+When you're prompted for it, you can get a list of the supported codes.
+
+options:
+  -h, --help            show this help message and exit
+  -auth, --authentication_key AUTHENTICATION_KEY
+                        set or update your authentication key to the given value
+  -slc, --source_language_code SOURCE_LANGUAGE_CODE
+                        set the language code for source language
+  -tlc, --target_language_code TARGET_LANGUAGE_CODE
+                        set the language code for target language
+  -del_auth, --delete_authentication_key
+                        delete the authentication key from your local keyring
+  -d, --debug           turn on debug mode, outputs to STDERR
+  -v, --version         show program's version number and exit
+
+Have fun!
+~~~
 
 ## Example execution
 
@@ -28,6 +48,7 @@ Bonjour le monde !
 ## Requirements
 
 - Created with Python 3.11.4
+- Highest Version testet so far: Python 3.13 (September 2025)
 - [DeepL authentication key](https://www.deepl.com) (As of September 2023 it is free, but you still need a credit card)
 - Some default Keyring implementation to store your authentication key with [keyring](https://pypi.org/project/keyring/)
 
@@ -49,7 +70,7 @@ pyenv install 3.11.4
 /home/${USER}/.pyenv/versions/3.11.4/bin/python3.11 -m venv cli_translator
 
 # henceforth active it before using the cli-translator
-source cli_translator_2/bin/activate
+source cli_translator/bin/activate
 ~~~
 
 ### Install requirements
