@@ -218,7 +218,7 @@ def translate(text_to_translate: str, config: Config) -> List[deepl.TextResult]:
     """do the deepl call and print the translation"""
 
     translator: deepl.Translator
-    result: deepl.TextResult | [deepl.TextResult]
+    result: deepl.TextResult | List[deepl.TextResult]
 
     try:
         translator = deepl.Translator(config.deepl_authentication_key)
@@ -231,7 +231,7 @@ def translate(text_to_translate: str, config: Config) -> List[deepl.TextResult]:
             target_lang=config.target_language.code,
             source_lang=config.source_language.code,
             formality=deepl.Formality.DEFAULT,
-            model_type=deepl.ModelType.LATENCY_OPTIMIZED # no quality_optimized for free users
+            model_type=deepl.ModelType.LATENCY_OPTIMIZED,  # no quality_optimized for free users
         )
     except deepl.exceptions.AuthorizationException:
         exit_error("Authorization failure, best to check your authentication key.")
