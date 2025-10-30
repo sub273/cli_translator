@@ -9,8 +9,8 @@ No classical fixed values you need to change, so: no classic config file.
 from dataclasses import dataclass
 
 # local imports
-from logger import log_args_and_return_value
-from languages import Language
+from lib.logger import log_args_and_return_value
+from lib.languages import Language
 
 
 @dataclass

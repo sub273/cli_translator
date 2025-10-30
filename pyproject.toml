@@ -1,0 +1,12 @@
+[project]
+name = "cli-translator"
+version = "20251030.2124"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "deepl==1.23.0",
+    "keyring==25.6.0",
+    "requests==2.32.5",
+    "urllib3==2.5.0",
+]

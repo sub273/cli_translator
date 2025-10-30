@@ -3,7 +3,7 @@
 
 # pylint: disable=logging-fstring-interpolation, import-error, broad-except
 
-__version__ = "20241111.2126"
+__version__ = "20251030.2124"
 
 # standard imports
 import argparse
@@ -19,9 +19,9 @@ import keyring
 import deepl
 
 # local imports
-from config import Config, get_config
-from languages import LanguageType, source_languages, target_languages
-from logger import configure_root_logger, log_args_and_return_value
+from lib.config import Config, get_config
+from lib.languages import LanguageType, source_languages, target_languages
+from lib.logger import configure_root_logger, log_args_and_return_value
 
 
 @dataclass
